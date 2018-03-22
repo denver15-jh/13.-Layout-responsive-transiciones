@@ -1,0 +1,168 @@
+body, h1, p{
+  margin: 0;
+  color: white;
+}
+body{
+  background-color: black;
+}
+
+header{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: gray;
+  position: relative;
+  height: 50px;
+}
+
+.logo{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+  -webkit-transition: 3s;
+  transition: 3s;
+  background-color: skyblue;
+}
+
+.logo img{
+  background-color: pink;
+  margin-left: 10px;
+  padding: 5px;
+  -webkit-transition: 3s;
+  transition: 3s;
+}
+
+.menu, .banner{
+  width: 30%;
+  height: 50px;
+  top: 0;
+}
+
+.banner{
+  background-color: purple;
+  -webkit-transition: 3s;
+  transition: 3s;
+  position: absolute;
+  right: 30%;
+  top: 0;
+}
+
+.menu{
+  position: absolute;
+  right: 0;
+  top: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+  background-color: orange;
+}
+
+.portada{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-transition: 3s;
+  transition: 3s;
+  position: relative;
+  top: 0;
+
+}
+
+.columna-1{
+  width: 70%;
+  position: relative;
+  top: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+  height: auto;
+  background-color: green;
+}
+
+.columna-2{
+  width: 30%;
+  position: relative;
+  top: 0;
+  -webkit-transition: 3s;
+  transition: 3s;
+  height: auto;
+  background-color: blue;
+}
+
+/* MEDIAQUERIES */
+
+@media (max-width: 768px){
+  .logo{
+    width: 50%;
+  }
+
+  .banner{
+    top: 50px;
+    right: 0;
+  }
+
+  .menu{
+    width: 50%;
+    left: 50%;
+    top: 0;
+  }
+
+  .columna-2{
+    top: 50px;
+  }
+}
+
+@media (max-width: 600px){
+  .logo{
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .menu{
+    left: 0;
+    top: 50px;
+    width: 70%;
+  }
+
+  .columna-1{
+    top: 50px;
+  }
+
+  .columna-2{
+    top: 50px;
+  }
+}
+
+@media (max-width: 400px){
+
+  .menu{
+    width: 100%;
+  }
+
+  .banner{
+    top: 100px;
+    width: 100%;
+  }
+
+  .portada{
+    display: block;
+  }
+
+  .columna-1{
+    top: 100px;
+    width: 100%;
+  }
+
+  .columna-2{
+    top: 100px;
+    width: 100%;
+  }
+}
